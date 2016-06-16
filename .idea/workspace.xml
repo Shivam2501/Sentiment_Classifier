@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8d175a41-de21-4ac5-bf34-d8f6e693d86f" name="Default" comment="" />
+    <list default="true" id="8d175a41-de21-4ac5-bf34-d8f6e693d86f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/illinois/cs/cogcomp/lbjava/sentiment/SentimentClassifier.ex" afterPath="$PROJECT_DIR$/src/main/java/edu/illinois/cs/cogcomp/lbjava/sentiment/SentimentClassifier.ex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/illinois/cs/cogcomp/lbjava/sentiment/SentimentClassifier.test.ex" afterPath="$PROJECT_DIR$/src/main/java/edu/illinois/cs/cogcomp/lbjava/sentiment/SentimentClassifier.test.ex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/illinois/cs/cogcomp/lbjava/sentiment/BagOfWords.class" afterPath="$PROJECT_DIR$/target/classes/edu/illinois/cs/cogcomp/lbjava/sentiment/BagOfWords.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/illinois/cs/cogcomp/lbjava/sentiment/Reader.class" afterPath="$PROJECT_DIR$/target/classes/edu/illinois/cs/cogcomp/lbjava/sentiment/Reader.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/illinois/cs/cogcomp/lbjava/sentiment/SentimentClassifier$Parameters.class" afterPath="$PROJECT_DIR$/target/classes/edu/illinois/cs/cogcomp/lbjava/sentiment/SentimentClassifier$Parameters.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/illinois/cs/cogcomp/lbjava/sentiment/SentimentClassifier.class" afterPath="$PROJECT_DIR$/target/classes/edu/illinois/cs/cogcomp/lbjava/sentiment/SentimentClassifier.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/illinois/cs/cogcomp/lbjava/sentiment/SentimentClassifier.lc" afterPath="$PROJECT_DIR$/target/classes/edu/illinois/cs/cogcomp/lbjava/sentiment/SentimentClassifier.lc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/illinois/cs/cogcomp/lbjava/sentiment/SentimentClassifier.lex" afterPath="$PROJECT_DIR$/target/classes/edu/illinois/cs/cogcomp/lbjava/sentiment/SentimentClassifier.lex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/illinois/cs/cogcomp/lbjava/sentiment/SentimentLabel.class" afterPath="$PROJECT_DIR$/target/classes/edu/illinois/cs/cogcomp/lbjava/sentiment/SentimentLabel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/illinois/cs/cogcomp/lbjava/sentiment/Reader.java" afterPath="$PROJECT_DIR$/src/main/java/edu/illinois/cs/cogcomp/lbjava/sentiment/Reader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/illinois/cs/cogcomp/lbjava/sentiment/SentimentClassifier.java" afterPath="$PROJECT_DIR$/src/main/java/edu/illinois/cs/cogcomp/lbjava/sentiment/SentimentClassifier.java" />
+    </list>
     <ignored path="SentimentClassifier.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -56,8 +70,8 @@
       <file leaf-file-name="Document.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/illinois/cs/cogcomp/lbjava/Document.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+            <state relative-caret-position="417">
+              <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#446#454#0" expanded="true" />
@@ -75,12 +89,12 @@
       <file leaf-file-name="Reader.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/illinois/cs/cogcomp/lbjava/sentiment/Reader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
+            <state relative-caret-position="252">
+              <caret line="57" column="30" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1768#1769#0" expanded="true" />
-                <element signature="e#1795#1796#0" expanded="true" />
+                <element signature="e#1789#1790#0" expanded="true" />
+                <element signature="e#1816#1817#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -105,6 +119,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
@@ -124,8 +141,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/data/test.tsv" />
         <option value="$PROJECT_DIR$/data/train.tsv" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/illinois/cs/cogcomp/lbjava/sentiment/Reader.java" />
         <option value="$PROJECT_DIR$/src/main/lbj/SentimentClassifier.lbj" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/illinois/cs/cogcomp/lbjava/sentiment/Reader.java" />
       </list>
     </option>
   </component>
@@ -147,7 +164,7 @@
     <option name="width" value="1276" />
     <option name="height" value="709" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -240,28 +257,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lbj" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SentimentClassifier" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SentimentClassifier" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -320,6 +315,10 @@
       <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -695,10 +694,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/lbj/SentimentClassifier.lbj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/illinois/cs/cogcomp/lbjava/Document.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+        <state relative-caret-position="417">
+          <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#446#454#0" expanded="true" />
@@ -712,22 +719,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/lbj/SentimentClassifier.lbj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/illinois/cs/cogcomp/lbjava/sentiment/Reader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
+        <state relative-caret-position="252">
+          <caret line="57" column="30" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1768#1769#0" expanded="true" />
-            <element signature="e#1795#1796#0" expanded="true" />
+            <element signature="e#1789#1790#0" expanded="true" />
+            <element signature="e#1816#1817#0" expanded="true" />
           </folding>
         </state>
       </provider>

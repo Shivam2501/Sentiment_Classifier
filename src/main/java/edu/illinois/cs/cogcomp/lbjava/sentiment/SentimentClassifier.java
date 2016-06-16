@@ -368,18 +368,6 @@ public class SentimentClassifier extends SparseNetworkLearner
     super.learn(a0, a1, a2, a3);
   }
 
-  public void setLTU(edu.illinois.cs.cogcomp.lbjava.learn.LinearThresholdUnit a0)
-  {
-    if (isClone)
-    {
-      loadInstance();
-      instance.setLTU(a0);
-      return;
-    }
-
-    super.setLTU(a0);
-  }
-
   public edu.illinois.cs.cogcomp.lbjava.classify.FeatureVector classify(int[] a0, double[] a1)
   {
     if (isClone)
@@ -411,17 +399,6 @@ public class SentimentClassifier extends SparseNetworkLearner
     }
 
     return super.discreteValue(a0, a1);
-  }
-
-  public java.lang.Object getLTU(int a0)
-  {
-    if (isClone)
-    {
-      loadInstance();
-      return instance.getLTU(a0);
-    }
-
-    return super.getLTU(a0);
   }
 
   public int getNumExamples()
@@ -479,6 +456,17 @@ public class SentimentClassifier extends SparseNetworkLearner
     return super.isUsingConjunctiveLabels();
   }
 
+  public java.lang.Object getLTU(int a0)
+  {
+    if (isClone)
+    {
+      loadInstance();
+      return instance.getLTU(a0);
+    }
+
+    return super.getLTU(a0);
+  }
+
   public void setParameters(edu.illinois.cs.cogcomp.lbjava.learn.SparseNetworkLearner.Parameters a0)
   {
     if (isClone)
@@ -489,6 +477,18 @@ public class SentimentClassifier extends SparseNetworkLearner
     }
 
     super.setParameters(a0);
+  }
+
+  public void setLTU(edu.illinois.cs.cogcomp.lbjava.learn.LinearThresholdUnit a0)
+  {
+    if (isClone)
+    {
+      loadInstance();
+      instance.setLTU(a0);
+      return;
+    }
+
+    super.setLTU(a0);
   }
 
   public void setLabeler(edu.illinois.cs.cogcomp.lbjava.classify.Classifier a0)
