@@ -1,0 +1,33 @@
+package edu.illinois.cs.cogcomp.lbjava.sentiment;
+
+import java.util.List;
+
+import edu.illinois.cs.cogcomp.lbjava.Document;
+import edu.illinois.cs.cogcomp.lbjava.sentiment.Reader;
+
+/** Bag of Words feature */
+discrete% BagOfWords(Document d) <- {
+    List words = d.getWords();
+    for (int i = 0; i < words.size(); i++)
+	    sense words.get(i);
+}
+
+discrete SentimentLabel(Document d) <- { return d.getLabel(); }
+
+discrete SentimentClassifier(edu.illinois.cs.cogcomp.lbjava.Document d) <-
+learn SentimentLabel
+  using BagOfWords
+  from new Reader("data/train.tsv")
+  5 rounds
+
+  with SparseNetworkLearner {
+  SparseAveragedPerceptron.Parameters p = new SparseAveragedPerceptron.Parameters();
+     p.learningRate = 0.1;
+     p.thickness = 2;
+     baseLTU = new SparseAveragedPerceptron(p);
+  }
+  testFrom new Reader("data/test.tsv")
+
+  progressOutput 2000
+end
+
