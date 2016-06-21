@@ -14,7 +14,7 @@ discrete% BagOfWords(Document d) <- {
 
 discrete SentimentLabel(Document d) <- { return d.getLabel(); }
 
-discrete SentimentClassifier(edu.illinois.cs.cogcomp.lbjava.Document d) <-
+discrete SentimentClassifier(Document d) <-
 learn SentimentLabel
   using BagOfWords
   from new Reader("data/train.tsv")

@@ -46,7 +46,7 @@ public class Reader implements Parser {
     }
 
     public String label(String label){
-        if(label.equals("0") || label.equals("1")){
+        if(label.equals("0")){
             return "Negative";
         }else if(label.equals("1")){
             return "Somewhat Negative";

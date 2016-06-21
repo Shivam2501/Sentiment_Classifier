@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>edu.illinois.cs.cogcomp</groupId>
-    <artifactId>lbjava-project</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>illinois-sentiment</artifactId>
+    <version>1.0.0</version>
 
     <properties>
         <lbjava.mavenplugin.defaultgoal>generate</lbjava.mavenplugin.defaultgoal>
@@ -40,8 +40,8 @@
         </dependency>
         <dependency>
             <groupId>edu.illinois.cs.cogcomp</groupId>
-            <artifactId>illinois-pos</artifactId>
-            <version>2.0.0</version>
+            <artifactId>illinois-nlp-pipeline</artifactId>
+            <version>0.1.15</version>
         </dependency>
     </dependencies>
 

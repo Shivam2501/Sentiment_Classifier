@@ -1,5 +1,5 @@
 // Modifying this comment will cause the next execution of LBJava to overwrite this file.
-// F1B88000000000000000D805D4B43014C0DFB216F4DE1C17D287AAD38F97A26B4BA80ED2D9947B3677766842BDA02EF773B250F228248C1E5E5EDBCB4882E994906D4943676DE6B54198BD84C32A0DBB8D6B135E82ECB55E6C7EEA8B673F687047779D7F3C604813C5D914B48C9E7476E8B1A61A7989A18B1C661BD79CC1406BC9B3844748511603F8A20A2E9B236C4E45E05D81E21837F9C8A7C8AB38571461A742D366EDFC70B02EF831A7D7026C682C298D3515EC9CD2191B3BC3C205066FD64FF0EE86C350B8538ABD9BB24BF7CC0A677130AABB8E7F9844C0A9C41638243F7A7EF34B745C41F314944F1E7F0C63935ED2C47FFE6F00FA055882BF7D85A230373C66AB8E5B4FA039ABEA18258F20D43FD2AAFA100000
+// F1B88000000000000000D809F3F43C04C05CFBA8599A91801A21359E0CFD922A55B024263737E4A7A427772BD961901FDD17AAA4C2840B878F9F9ED3F3B3F2533921C6928AF1C6CD7F822EB1F4C3B7885F83120793CDC504F48C1E74851EE8A7815C7861EE0BD553F619D9043C170804748D01A3339CC1A2E5A23AF058AC12BC1EA183E81C4A74FAB78D62461A762D364EEAA92288F3FC4F6F04C8D29B5317D494936826D8C838D1CC2090697A0AF786769F202517A2067EE60DA0F21AC2EA62AAB7F5771844C0DC710B341AAE5E5FF0FE95237CF20521D7AFDB0BD6ECD7313D3E78D30A658CC979EEDD7ACC06C69D24753A6A1516E569520507FD4FC7DF1109100000
 
 package edu.illinois.cs.cogcomp.lbjava.sentiment;
 
@@ -122,10 +122,10 @@ public class SentimentClassifier extends SparseNetworkLearner
   {
     if (isClone)
     {
-      if (!(example instanceof edu.illinois.cs.cogcomp.lbjava.Document || example instanceof Object[]))
+      if (!(example instanceof Document || example instanceof Object[]))
       {
         String type = example == null ? "null" : example.getClass().getName();
-        System.err.println("Classifier 'SentimentClassifier(edu.illinois.cs.cogcomp.lbjava.Document)' defined on line 18 of SentimentClassifier.lbj received '" + type + "' as input.");
+        System.err.println("Classifier 'SentimentClassifier(Document)' defined on line 18 of SentimentClassifier.lbj received '" + type + "' as input.");
         new Exception().printStackTrace();
         System.exit(1);
       }
@@ -152,10 +152,10 @@ public class SentimentClassifier extends SparseNetworkLearner
   {
     if (isClone)
     {
-      if (!(examples instanceof edu.illinois.cs.cogcomp.lbjava.Document[] || examples instanceof Object[][]))
+      if (!(examples instanceof Document[] || examples instanceof Object[][]))
       {
         String type = examples == null ? "null" : examples.getClass().getName();
-        System.err.println("Classifier 'SentimentClassifier(edu.illinois.cs.cogcomp.lbjava.Document)' defined on line 18 of SentimentClassifier.lbj received '" + type + "' as input.");
+        System.err.println("Classifier 'SentimentClassifier(Document)' defined on line 18 of SentimentClassifier.lbj received '" + type + "' as input.");
         new Exception().printStackTrace();
         System.exit(1);
       }
@@ -172,10 +172,10 @@ public class SentimentClassifier extends SparseNetworkLearner
   {
     if (isClone)
     {
-      if (!(__example instanceof edu.illinois.cs.cogcomp.lbjava.Document || __example instanceof Object[]))
+      if (!(__example instanceof Document || __example instanceof Object[]))
       {
         String type = __example == null ? "null" : __example.getClass().getName();
-        System.err.println("Classifier 'SentimentClassifier(edu.illinois.cs.cogcomp.lbjava.Document)' defined on line 18 of SentimentClassifier.lbj received '" + type + "' as input.");
+        System.err.println("Classifier 'SentimentClassifier(Document)' defined on line 18 of SentimentClassifier.lbj received '" + type + "' as input.");
         new Exception().printStackTrace();
         System.exit(1);
       }
@@ -210,10 +210,10 @@ public class SentimentClassifier extends SparseNetworkLearner
   {
     if (isClone)
     {
-      if (!(examples instanceof edu.illinois.cs.cogcomp.lbjava.Document[] || examples instanceof Object[][]))
+      if (!(examples instanceof Document[] || examples instanceof Object[][]))
       {
         String type = examples == null ? "null" : examples.getClass().getName();
-        System.err.println("Classifier 'SentimentClassifier(edu.illinois.cs.cogcomp.lbjava.Document)' defined on line 18 of SentimentClassifier.lbj received '" + type + "' as input.");
+        System.err.println("Classifier 'SentimentClassifier(Document)' defined on line 18 of SentimentClassifier.lbj received '" + type + "' as input.");
         new Exception().printStackTrace();
         System.exit(1);
       }
@@ -275,17 +275,6 @@ public class SentimentClassifier extends SparseNetworkLearner
   public int hashCode() { return "SentimentClassifier".hashCode(); }
   public boolean equals(Object o) { return o instanceof SentimentClassifier; }
 
-  public edu.illinois.cs.cogcomp.lbjava.classify.Feature valueOf(int[] a0, double[] a1, java.util.Collection a2)
-  {
-    if (isClone)
-    {
-      loadInstance();
-      return instance.valueOf(a0, a1, a2);
-    }
-
-    return super.valueOf(a0, a1, a2);
-  }
-
   public edu.illinois.cs.cogcomp.lbjava.classify.Feature valueOf(java.lang.Object a0, java.util.Collection a1)
   {
     if (isClone)
@@ -297,7 +286,18 @@ public class SentimentClassifier extends SparseNetworkLearner
     return super.valueOf(a0, a1);
   }
 
-  public void write(edu.illinois.cs.cogcomp.lbjava.util.ExceptionlessOutputStream a0)
+  public edu.illinois.cs.cogcomp.lbjava.classify.Feature valueOf(int[] a0, double[] a1, java.util.Collection a2)
+  {
+    if (isClone)
+    {
+      loadInstance();
+      return instance.valueOf(a0, a1, a2);
+    }
+
+    return super.valueOf(a0, a1, a2);
+  }
+
+  public void write(java.io.PrintStream a0)
   {
     if (isClone)
     {
@@ -309,7 +309,7 @@ public class SentimentClassifier extends SparseNetworkLearner
     super.write(a0);
   }
 
-  public void write(java.io.PrintStream a0)
+  public void write(edu.illinois.cs.cogcomp.lbjava.util.ExceptionlessOutputStream a0)
   {
     if (isClone)
     {
@@ -401,6 +401,41 @@ public class SentimentClassifier extends SparseNetworkLearner
     return super.discreteValue(a0, a1);
   }
 
+  public void forget()
+  {
+    if (isClone)
+    {
+      loadInstance();
+      instance.forget();
+      return;
+    }
+
+    super.forget();
+  }
+
+  public void setLTU(edu.illinois.cs.cogcomp.lbjava.learn.LinearThresholdUnit a0)
+  {
+    if (isClone)
+    {
+      loadInstance();
+      instance.setLTU(a0);
+      return;
+    }
+
+    super.setLTU(a0);
+  }
+
+  public java.lang.Object getLTU(int a0)
+  {
+    if (isClone)
+    {
+      loadInstance();
+      return instance.getLTU(a0);
+    }
+
+    return super.getLTU(a0);
+  }
+
   public int getNumExamples()
   {
     if (isClone)
@@ -456,17 +491,6 @@ public class SentimentClassifier extends SparseNetworkLearner
     return super.isUsingConjunctiveLabels();
   }
 
-  public java.lang.Object getLTU(int a0)
-  {
-    if (isClone)
-    {
-      loadInstance();
-      return instance.getLTU(a0);
-    }
-
-    return super.getLTU(a0);
-  }
-
   public void setParameters(edu.illinois.cs.cogcomp.lbjava.learn.SparseNetworkLearner.Parameters a0)
   {
     if (isClone)
@@ -477,18 +501,6 @@ public class SentimentClassifier extends SparseNetworkLearner
     }
 
     super.setParameters(a0);
-  }
-
-  public void setLTU(edu.illinois.cs.cogcomp.lbjava.learn.LinearThresholdUnit a0)
-  {
-    if (isClone)
-    {
-      loadInstance();
-      instance.setLTU(a0);
-      return;
-    }
-
-    super.setLTU(a0);
   }
 
   public void setLabeler(edu.illinois.cs.cogcomp.lbjava.classify.Classifier a0)
@@ -551,29 +563,6 @@ public class SentimentClassifier extends SparseNetworkLearner
     super.doneWithRound();
   }
 
-  public void forget()
-  {
-    if (isClone)
-    {
-      loadInstance();
-      instance.forget();
-      return;
-    }
-
-    super.forget();
-  }
-
-  public edu.illinois.cs.cogcomp.lbjava.classify.ScoreSet scores(int[] a0, double[] a1)
-  {
-    if (isClone)
-    {
-      loadInstance();
-      return instance.scores(a0, a1);
-    }
-
-    return super.scores(a0, a1);
-  }
-
   public edu.illinois.cs.cogcomp.lbjava.classify.ScoreSet scores(java.lang.Object a0, java.util.Collection a1)
   {
     if (isClone)
@@ -594,6 +583,17 @@ public class SentimentClassifier extends SparseNetworkLearner
     }
 
     return super.scores(a0, a1, a2);
+  }
+
+  public edu.illinois.cs.cogcomp.lbjava.classify.ScoreSet scores(int[] a0, double[] a1)
+  {
+    if (isClone)
+    {
+      loadInstance();
+      return instance.scores(a0, a1);
+    }
+
+    return super.scores(a0, a1);
   }
 
   public void write(java.lang.String a0, java.lang.String a1)
@@ -632,18 +632,6 @@ public class SentimentClassifier extends SparseNetworkLearner
     super.save();
   }
 
-  public void learn(edu.illinois.cs.cogcomp.lbjava.classify.FeatureVector a0)
-  {
-    if (isClone)
-    {
-      loadInstance();
-      instance.learn(a0);
-      return;
-    }
-
-    super.learn(a0);
-  }
-
   public void learn(edu.illinois.cs.cogcomp.lbjava.classify.FeatureVector[] a0)
   {
     if (isClone)
@@ -656,7 +644,149 @@ public class SentimentClassifier extends SparseNetworkLearner
     super.learn(a0);
   }
 
-  public edu.illinois.cs.cogcomp.lbjava.classify.FeatureVector[] classify(edu.illinois.cs.cogcomp.lbjava.classify.FeatureVector[] a0)
+  public void learn(edu.illinois.cs.cogcomp.lbjava.classify.FeatureVector a0)
+  {
+    if (isClone)
+    {
+      loadInstance();
+      instance.learn(a0);
+      return;
+    }
+
+    super.learn(a0);
+  }
+
+  public int getPrunedLexiconSize()
+  {
+    if (isClone)
+    {
+      loadInstance();
+      return instance.getPrunedLexiconSize();
+    }
+
+    return super.getPrunedLexiconSize();
+  }
+
+  public void saveModel()
+  {
+    if (isClone)
+    {
+      loadInstance();
+      instance.saveModel();
+      return;
+    }
+
+    super.saveModel();
+  }
+
+  public void saveLexicon()
+  {
+    if (isClone)
+    {
+      loadInstance();
+      instance.saveLexicon();
+      return;
+    }
+
+    super.saveLexicon();
+  }
+
+  public void writeModel(java.lang.String a0)
+  {
+    if (isClone)
+    {
+      loadInstance();
+      instance.writeModel(a0);
+      return;
+    }
+
+    super.writeModel(a0);
+  }
+
+  public void writeLexicon(java.lang.String a0)
+  {
+    if (isClone)
+    {
+      loadInstance();
+      instance.writeLexicon(a0);
+      return;
+    }
+
+    super.writeLexicon(a0);
+  }
+
+  public void readModel(java.net.URL a0)
+  {
+    if (isClone)
+    {
+      loadInstance();
+      instance.readModel(a0);
+      return;
+    }
+
+    super.readModel(a0);
+  }
+
+  public void readModel(java.lang.String a0)
+  {
+    if (isClone)
+    {
+      loadInstance();
+      instance.readModel(a0);
+      return;
+    }
+
+    super.readModel(a0);
+  }
+
+  public void readLexicon(java.net.URL a0)
+  {
+    if (isClone)
+    {
+      loadInstance();
+      instance.readLexicon(a0);
+      return;
+    }
+
+    super.readLexicon(a0);
+  }
+
+  public void readLexicon(java.lang.String a0)
+  {
+    if (isClone)
+    {
+      loadInstance();
+      instance.readLexicon(a0);
+      return;
+    }
+
+    super.readLexicon(a0);
+  }
+
+  public void readLabelLexicon(edu.illinois.cs.cogcomp.lbjava.util.ExceptionlessInputStream a0)
+  {
+    if (isClone)
+    {
+      loadInstance();
+      instance.readLabelLexicon(a0);
+      return;
+    }
+
+    super.readLabelLexicon(a0);
+  }
+
+  public edu.illinois.cs.cogcomp.lbjava.learn.Lexicon demandLexicon()
+  {
+    if (isClone)
+    {
+      loadInstance();
+      return instance.demandLexicon();
+    }
+
+    return super.demandLexicon();
+  }
+
+  public edu.illinois.cs.cogcomp.lbjava.classify.FeatureVector classify(edu.illinois.cs.cogcomp.lbjava.classify.FeatureVector a0)
   {
     if (isClone)
     {
@@ -678,7 +808,7 @@ public class SentimentClassifier extends SparseNetworkLearner
     return super.classify(a0);
   }
 
-  public edu.illinois.cs.cogcomp.lbjava.classify.FeatureVector classify(edu.illinois.cs.cogcomp.lbjava.classify.FeatureVector a0)
+  public edu.illinois.cs.cogcomp.lbjava.classify.FeatureVector[] classify(edu.illinois.cs.cogcomp.lbjava.classify.FeatureVector[] a0)
   {
     if (isClone)
     {
@@ -711,17 +841,6 @@ public class SentimentClassifier extends SparseNetworkLearner
     return super.discreteValue(a0);
   }
 
-  public double realValue(int[] a0, double[] a1)
-  {
-    if (isClone)
-    {
-      loadInstance();
-      return instance.realValue(a0, a1);
-    }
-
-    return super.realValue(a0, a1);
-  }
-
   public double realValue(edu.illinois.cs.cogcomp.lbjava.classify.FeatureVector a0)
   {
     if (isClone)
@@ -731,6 +850,17 @@ public class SentimentClassifier extends SparseNetworkLearner
     }
 
     return super.realValue(a0);
+  }
+
+  public double realValue(int[] a0, double[] a1)
+  {
+    if (isClone)
+    {
+      loadInstance();
+      return instance.realValue(a0, a1);
+    }
+
+    return super.realValue(a0, a1);
   }
 
   public void readLexiconOnDemand(java.lang.String a0)
@@ -769,17 +899,6 @@ public class SentimentClassifier extends SparseNetworkLearner
     super.setParameters(a0);
   }
 
-  public edu.illinois.cs.cogcomp.lbjava.classify.ScoreSet scores(java.lang.Object a0)
-  {
-    if (isClone)
-    {
-      loadInstance();
-      return instance.scores(a0);
-    }
-
-    return super.scores(a0);
-  }
-
   public edu.illinois.cs.cogcomp.lbjava.classify.ScoreSet scores(edu.illinois.cs.cogcomp.lbjava.classify.FeatureVector a0)
   {
     if (isClone)
@@ -791,15 +910,15 @@ public class SentimentClassifier extends SparseNetworkLearner
     return super.scores(a0);
   }
 
-  public java.lang.Object[] getExampleArray(java.lang.Object a0, boolean a1)
+  public edu.illinois.cs.cogcomp.lbjava.classify.ScoreSet scores(java.lang.Object a0)
   {
     if (isClone)
     {
       loadInstance();
-      return instance.getExampleArray(a0, a1);
+      return instance.scores(a0);
     }
 
-    return super.getExampleArray(a0, a1);
+    return super.scores(a0);
   }
 
   public java.lang.Object[] getExampleArray(java.lang.Object a0)
@@ -811,6 +930,17 @@ public class SentimentClassifier extends SparseNetworkLearner
     }
 
     return super.getExampleArray(a0);
+  }
+
+  public java.lang.Object[] getExampleArray(java.lang.Object a0, boolean a1)
+  {
+    if (isClone)
+    {
+      loadInstance();
+      return instance.getExampleArray(a0, a1);
+    }
+
+    return super.getExampleArray(a0, a1);
   }
 
   public void setLexicon(edu.illinois.cs.cogcomp.lbjava.learn.Lexicon a0)
@@ -904,7 +1034,7 @@ public class SentimentClassifier extends SparseNetworkLearner
     super.setEncoding(a0);
   }
 
-  public void setModelLocation(java.net.URL a0)
+  public void setModelLocation(java.lang.String a0)
   {
     if (isClone)
     {
@@ -916,7 +1046,7 @@ public class SentimentClassifier extends SparseNetworkLearner
     super.setModelLocation(a0);
   }
 
-  public void setModelLocation(java.lang.String a0)
+  public void setModelLocation(java.net.URL a0)
   {
     if (isClone)
     {
@@ -939,7 +1069,7 @@ public class SentimentClassifier extends SparseNetworkLearner
     return super.getModelLocation();
   }
 
-  public void setLexiconLocation(java.lang.String a0)
+  public void setLexiconLocation(java.net.URL a0)
   {
     if (isClone)
     {
@@ -951,7 +1081,7 @@ public class SentimentClassifier extends SparseNetworkLearner
     super.setLexiconLocation(a0);
   }
 
-  public void setLexiconLocation(java.net.URL a0)
+  public void setLexiconLocation(java.lang.String a0)
   {
     if (isClone)
     {
@@ -1018,136 +1148,6 @@ public class SentimentClassifier extends SparseNetworkLearner
     }
 
     super.setReadLexiconOnDemand();
-  }
-
-  public int getPrunedLexiconSize()
-  {
-    if (isClone)
-    {
-      loadInstance();
-      return instance.getPrunedLexiconSize();
-    }
-
-    return super.getPrunedLexiconSize();
-  }
-
-  public void saveModel()
-  {
-    if (isClone)
-    {
-      loadInstance();
-      instance.saveModel();
-      return;
-    }
-
-    super.saveModel();
-  }
-
-  public void saveLexicon()
-  {
-    if (isClone)
-    {
-      loadInstance();
-      instance.saveLexicon();
-      return;
-    }
-
-    super.saveLexicon();
-  }
-
-  public void writeModel(java.lang.String a0)
-  {
-    if (isClone)
-    {
-      loadInstance();
-      instance.writeModel(a0);
-      return;
-    }
-
-    super.writeModel(a0);
-  }
-
-  public void writeLexicon(java.lang.String a0)
-  {
-    if (isClone)
-    {
-      loadInstance();
-      instance.writeLexicon(a0);
-      return;
-    }
-
-    super.writeLexicon(a0);
-  }
-
-  public void readModel(java.lang.String a0)
-  {
-    if (isClone)
-    {
-      loadInstance();
-      instance.readModel(a0);
-      return;
-    }
-
-    super.readModel(a0);
-  }
-
-  public void readModel(java.net.URL a0)
-  {
-    if (isClone)
-    {
-      loadInstance();
-      instance.readModel(a0);
-      return;
-    }
-
-    super.readModel(a0);
-  }
-
-  public void readLexicon(java.lang.String a0)
-  {
-    if (isClone)
-    {
-      loadInstance();
-      instance.readLexicon(a0);
-      return;
-    }
-
-    super.readLexicon(a0);
-  }
-
-  public void readLexicon(java.net.URL a0)
-  {
-    if (isClone)
-    {
-      loadInstance();
-      instance.readLexicon(a0);
-      return;
-    }
-
-    super.readLexicon(a0);
-  }
-
-  public void readLabelLexicon(edu.illinois.cs.cogcomp.lbjava.util.ExceptionlessInputStream a0)
-  {
-    if (isClone)
-    {
-      loadInstance();
-      instance.readLabelLexicon(a0);
-      return;
-    }
-
-    super.readLabelLexicon(a0);
-  }
-
-  public edu.illinois.cs.cogcomp.lbjava.learn.Lexicon demandLexicon()
-  {
-    if (isClone)
-    {
-      loadInstance();
-      return instance.demandLexicon();
-    }
-
-    return super.demandLexicon();
   }
 
   public static class Parameters extends SparseNetworkLearner.Parameters
