@@ -2,49 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d175a41-de21-4ac5-bf34-d8f6e693d86f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_efficient_java_matrix_library_ejml_0_23.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_io7m_xom_xom_1_2_10.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_7_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_core_1_8_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_configuration_commons_configuration_1_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_digester_commons_digester_1_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__de_jollyday_jollyday_0_4_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__edu_illinois_cs_cogcomp_LBJava_NLP_tools_1_0_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__edu_illinois_cs_cogcomp_curator_interfaces_0_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__edu_illinois_cs_cogcomp_illinois_chunker_2_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__edu_illinois_cs_cogcomp_illinois_chunker_model_2_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__edu_illinois_cs_cogcomp_illinois_common_resources_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__edu_illinois_cs_cogcomp_illinois_lemmatizer_2_1_2_SNAPSHOT.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__edu_illinois_cs_cogcomp_illinois_ner_2_8_5_SNAPSHOT.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__edu_illinois_cs_cogcomp_illinois_ner_models_conll_2_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__edu_illinois_cs_cogcomp_illinois_ner_models_ontonotes_2_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__edu_illinois_cs_cogcomp_illinois_nlp_pipeline_0_1_5_SNAPSHOT.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__edu_illinois_cs_cogcomp_illinois_pos_model_2_0_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__edu_illinois_cs_cogcomp_illinois_tokenizer_0_0_2_SNAPSHOT.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__edu_stanford_nlp_stanford_corenlp_3_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__edu_stanford_nlp_stanford_corenlp_models_3_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_2_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xalan_xalan_2_7_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xercesImpl_2_8_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_3_03.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__edu_illinois_cs_cogcomp_illinois_pos_2_0_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/edu/illinois/cs/cogcomp/lbjava/sentiment/SentimentClassifier.test.ex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/illinois/cs/cogcomp/lbjava/sentiment/SentimentClassifier.lc" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/illinois/cs/cogcomp/lbjava/sentiment/SentimentClassifier.ex" afterPath="$PROJECT_DIR$/src/main/java/edu/illinois/cs/cogcomp/lbjava/sentiment/SentimentClassifier.ex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/illinois/cs/cogcomp/lbjava/sentiment/SentimentClassifier.test.ex" afterPath="$PROJECT_DIR$/src/main/java/edu/illinois/cs/cogcomp/lbjava/sentiment/SentimentClassifier.test.ex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/illinois/cs/cogcomp/lbjava/Document.class" afterPath="$PROJECT_DIR$/target/classes/edu/illinois/cs/cogcomp/lbjava/Document.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/illinois/cs/cogcomp/lbjava/sentiment/Reader.class" afterPath="$PROJECT_DIR$/target/classes/edu/illinois/cs/cogcomp/lbjava/sentiment/Reader.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/illinois/cs/cogcomp/lbjava/sentiment/SentimentClassifier$Parameters.class" afterPath="$PROJECT_DIR$/target/classes/edu/illinois/cs/cogcomp/lbjava/sentiment/SentimentClassifier$Parameters.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/illinois/cs/cogcomp/lbjava/sentiment/SentimentClassifier.class" afterPath="$PROJECT_DIR$/target/classes/edu/illinois/cs/cogcomp/lbjava/sentiment/SentimentClassifier.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/illinois/cs/cogcomp/lbjava/sentiment/SentimentClassifier.lc" afterPath="$PROJECT_DIR$/target/classes/edu/illinois/cs/cogcomp/lbjava/sentiment/SentimentClassifier.lc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/illinois/cs/cogcomp/lbjava/sentiment/SentimentClassifier.lex" afterPath="$PROJECT_DIR$/target/classes/edu/illinois/cs/cogcomp/lbjava/sentiment/SentimentClassifier.lex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/illinois/cs/cogcomp/lbjava/sentiment/SentimentLabel.class" afterPath="$PROJECT_DIR$/target/classes/edu/illinois/cs/cogcomp/lbjava/sentiment/SentimentLabel.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CHANGELOG" afterPath="$PROJECT_DIR$/CHANGELOG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SentimentClassifier.iml" afterPath="$PROJECT_DIR$/SentimentClassifier.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/illinois/cs/cogcomp/lbjava/Document.java" afterPath="$PROJECT_DIR$/src/main/java/edu/illinois/cs/cogcomp/lbjava/Document.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/illinois/cs/cogcomp/lbjava/sentiment/Reader.java" afterPath="$PROJECT_DIR$/src/main/java/edu/illinois/cs/cogcomp/lbjava/sentiment/Reader.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/illinois/cs/cogcomp/lbjava/sentiment/SentimentClassifier.java" afterPath="$PROJECT_DIR$/src/main/java/edu/illinois/cs/cogcomp/lbjava/sentiment/SentimentClassifier.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/illinois/cs/cogcomp/lbjava/sentiment/SentimentLabel.java" afterPath="$PROJECT_DIR$/src/main/java/edu/illinois/cs/cogcomp/lbjava/sentiment/SentimentLabel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/lbj/SentimentClassifier.lbj" afterPath="$PROJECT_DIR$/src/main/lbj/SentimentClassifier.lbj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
     </list>
     <ignored path="SentimentClassifier.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,11 +40,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="303">
+              <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -97,16 +70,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Document.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Document.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/illinois/cs/cogcomp/lbjava/Document.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+            <state relative-caret-position="477">
+              <caret line="66" column="22" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#446#454#0" expanded="true" />
-                <element signature="e#698#699#0" expanded="true" />
-                <element signature="e#756#757#0" expanded="true" />
+                <element signature="e#834#842#0" expanded="true" />
+                <element signature="e#1086#1087#0" expanded="true" />
+                <element signature="e#1144#1145#0" expanded="true" />
+                <element signature="e#1331#1339#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -115,8 +89,8 @@
       <file leaf-file-name="Reader.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/illinois/cs/cogcomp/lbjava/sentiment/Reader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
+            <state relative-caret-position="330">
+              <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -127,8 +101,8 @@
       <file leaf-file-name="SentimentClassifier.lbj" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/lbj/SentimentClassifier.lbj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+            <state relative-caret-position="300">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -171,13 +145,13 @@
         <option value="$PROJECT_DIR$/src/main/lbj/test.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/illinois/cs/cogcomp/lbjava/test.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/illinois/cs/cogcomp/lbjava/sentiment/test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/illinois/cs/cogcomp/lbjava/Document.java" />
         <option value="$PROJECT_DIR$/data/test.tsv" />
         <option value="$PROJECT_DIR$/data/train.tsv" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/illinois/cs/cogcomp/lbjava/sentiment/Reader.java" />
-        <option value="$PROJECT_DIR$/src/main/lbj/SentimentClassifier.lbj" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/CHANGELOG" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/lbj/SentimentClassifier.lbj" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/illinois/cs/cogcomp/lbjava/sentiment/Reader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/illinois/cs/cogcomp/lbjava/Document.java" />
       </list>
     </option>
   </component>
@@ -658,10 +632,10 @@
     <entry file="file://$PROJECT_DIR$/src/main/lbj/test.java" />
     <entry file="file://$PROJECT_DIR$/src/main/lbj/test.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/illinois/cs/cogcomp/lbjava/sentiment/test.java" />
-    <entry file="file://$PROJECT_DIR$/data/train.tsv">
+    <entry file="file://$PROJECT_DIR$/CHANGELOG">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="76" selection-start-line="7" selection-start-column="76" selection-end-line="7" selection-end-column="76" />
+        <state relative-caret-position="30">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -674,50 +648,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/illinois/cs/cogcomp/lbjava/Document.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#446#454#0" expanded="true" />
-            <element signature="e#698#699#0" expanded="true" />
-            <element signature="e#756#757#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/illinois/cs/cogcomp/lbjava/sentiment/Reader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="303">
+          <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/lbj/SentimentClassifier.lbj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+        <state relative-caret-position="300">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CHANGELOG">
+    <entry file="file://$PROJECT_DIR$/data/train.tsv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        <state relative-caret-position="105">
+          <caret line="7" column="76" selection-start-line="7" selection-start-column="76" selection-end-line="7" selection-end-column="76" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/illinois/cs/cogcomp/lbjava/sentiment/Reader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="330">
+          <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/illinois/cs/cogcomp/lbjava/Document.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="66" column="22" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#834#842#0" expanded="true" />
+            <element signature="e#1086#1087#0" expanded="true" />
+            <element signature="e#1144#1145#0" expanded="true" />
+            <element signature="e#1331#1339#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

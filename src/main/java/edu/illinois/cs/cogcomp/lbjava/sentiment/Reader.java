@@ -18,6 +18,7 @@ public class Reader implements Parser {
         try{
             read(dir);
         }catch (Exception e) {
+            System.err.println("An IOException was caught :"+e.getMessage());
             e.printStackTrace();
             System.exit(-1);
         }
@@ -35,10 +36,12 @@ public class Reader implements Parser {
         while (line != null) {
 
             String[] parts = line.split("\t");
+
+            String id = parts[0];
             String phrase = parts[2];
             String sentiment = label(parts[3]);
 
-            docs.add(new Document(phrase,sentiment));
+            docs.add(new Document(id, phrase,sentiment));
             line = br.readLine();
         }
 

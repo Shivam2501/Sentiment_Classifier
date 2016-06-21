@@ -1,5 +1,5 @@
 // Modifying this comment will cause the next execution of LBJava to overwrite this file.
-// F1B88000000000000000B49CC2E4E2A4D2945580E4DCB29CCC5021E398949A93A1E29F9C5A02E924A86A28D8EA245B2005159615E924A8E5A7A245986A5B24D200CE1733D3F3000000
+// F1B8800000000000000053CC1BA02C0401481E75996207740385B71B3B4141C748BB139D2298CDE6A152FEEE604BA92EFF8922A9B2D8D0EE7B748BC297D983B1A444F70C70751538EB8CC32EC82DD04BDD5C487E25114C9A878362F9EF70B359737722D6B1DF3493B2FFDCF02844C90657562C68DEB091891C5128000000
 
 package edu.illinois.cs.cogcomp.lbjava.sentiment;
 
@@ -13,42 +13,43 @@ import edu.illinois.cs.cogcomp.lbjava.sentiment.Reader;
 import java.util.List;
 
 
-public class SentimentLabel extends Classifier
+/** POS feature */
+public class POS extends Classifier
 {
-  public SentimentLabel()
+  public POS()
   {
     containingPackage = "edu.illinois.cs.cogcomp.lbjava.sentiment";
-    name = "SentimentLabel";
+    name = "POS";
   }
 
   public String getInputType() { return "edu.illinois.cs.cogcomp.lbjava.Document"; }
-  public String getOutputType() { return "discrete"; }
-
+  public String getOutputType() { return "discrete%"; }
 
   public FeatureVector classify(Object __example)
-  {
-    return new FeatureVector(featureValue(__example));
-  }
-
-  public Feature featureValue(Object __example)
-  {
-    String result = discreteValue(__example);
-    return new DiscretePrimitiveStringFeature(containingPackage, name, "", result, valueIndexOf(result), (short) allowableValues().length);
-  }
-
-  public String discreteValue(Object __example)
   {
     if (!(__example instanceof Document))
     {
       String type = __example == null ? "null" : __example.getClass().getName();
-      System.err.println("Classifier 'SentimentLabel(Document)' defined on line 22 of SentimentClassifier.lbj received '" + type + "' as input.");
+      System.err.println("Classifier 'POS(Document)' defined on line 17 of SentimentClassifier.lbj received '" + type + "' as input.");
       new Exception().printStackTrace();
       System.exit(1);
     }
 
     Document d = (Document) __example;
 
-    return "" + (d.getLabel());
+    FeatureVector __result;
+    __result = new FeatureVector();
+    String __id;
+    String __value;
+
+    List speech = d.getPOS();
+    for (int i = 0; i < speech.size(); i++)
+    {
+      __id = "" + (speech.get(i));
+      __value = "true";
+      __result.addFeature(new DiscretePrimitiveStringFeature(this.containingPackage, this.name, __id, __value, valueIndexOf(__value), (short) 0));
+    }
+    return __result;
   }
 
   public FeatureVector[] classify(Object[] examples)
@@ -56,7 +57,7 @@ public class SentimentLabel extends Classifier
     if (!(examples instanceof Document[]))
     {
       String type = examples == null ? "null" : examples.getClass().getName();
-      System.err.println("Classifier 'SentimentLabel(Document)' defined on line 22 of SentimentClassifier.lbj received '" + type + "' as input.");
+      System.err.println("Classifier 'POS(Document)' defined on line 17 of SentimentClassifier.lbj received '" + type + "' as input.");
       new Exception().printStackTrace();
       System.exit(1);
     }
@@ -64,7 +65,7 @@ public class SentimentLabel extends Classifier
     return super.classify(examples);
   }
 
-  public int hashCode() { return "SentimentLabel".hashCode(); }
-  public boolean equals(Object o) { return o instanceof SentimentLabel; }
+  public int hashCode() { return "POS".hashCode(); }
+  public boolean equals(Object o) { return o instanceof POS; }
 }
 
