@@ -1,3 +1,7 @@
-The Jun 16 2016 Shivam Bharuka <bharuka2@illinois.edu>
+Thu Jun 16 2016 Shivam Bharuka <bharuka2@illinois.edu>
 
 	* v1.0.0:added Bag of Words as features.
+
+Wed Jun 29 2016 Shivam Bharuka <bharuka2@illinois.edu>
+
+    * v1.0.1:added POS and Gazetteer as a feature.

@@ -1,9 +1,9 @@
-package edu.illinois.cs.cogcomp.lbjava.sentiment;
+package edu.illinois.cs.cogcomp.sentiment.sentiment;
 
 import java.util.List;
 
-import edu.illinois.cs.cogcomp.lbjava.Document;
-import edu.illinois.cs.cogcomp.lbjava.sentiment.Reader;
+import edu.illinois.cs.cogcomp.sentiment.Document;
+import edu.illinois.cs.cogcomp.sentiment.sentiment.Reader;
 
 /** Bag of Words feature */
 discrete% BagOfWords(Document d) <- {
@@ -19,13 +19,17 @@ discrete% POS(Document d) <- {
 	    sense speech.get(i);
 }
 
+/** Gazetteer feature */
+discrete Gazetteer(Document d) <- {
+    String score = d.getScore();
+    return score;
+}
+
 discrete SentimentLabel(Document d) <- { return d.getLabel(); }
 
 discrete SentimentClassifier(Document d) <-
 learn SentimentLabel
-  using BagOfWords, POS
-  from new Reader("data/train.tsv")
-  5 rounds
+  using BagOfWords, POS, Gazetteer
 
   with SparseNetworkLearner {
   SparseAveragedPerceptron.Parameters p = new SparseAveragedPerceptron.Parameters();
@@ -33,8 +37,5 @@ learn SentimentLabel
      p.thickness = 2;
      baseLTU = new SparseAveragedPerceptron(p);
   }
-  testFrom new Reader("data/test.tsv")
-
-  progressOutput 2000
 end
 
