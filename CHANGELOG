@@ -1,7 +1,11 @@
-Thu Jun 16 2016 Shivam Bharuka <bharuka2@illinois.edu>
+Wed Aug 2 2016 Shivam Bharuka <bharuka2@illinois.edu>
 
-	* v1.0.0:added Bag of Words as features.
+    * v1.0.2:added Negation Score as a feature and implemented twitter tokenize
 
 Wed Jun 29 2016 Shivam Bharuka <bharuka2@illinois.edu>
 
     * v1.0.1:added POS and Gazetteer as a feature.
+
+Thu Jun 16 2016 Shivam Bharuka <bharuka2@illinois.edu>
+
+	* v1.0.0:added Bag of Words as features.

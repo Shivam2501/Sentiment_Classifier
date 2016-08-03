@@ -25,11 +25,17 @@ discrete Gazetteer(Document d) <- {
     return score;
 }
 
+/** Negation Score feature */
+discrete NegationScore(Document d) <- {
+    String score = d.getNegationScore();
+    return score;
+}
+
 discrete SentimentLabel(Document d) <- { return d.getLabel(); }
 
 discrete SentimentClassifier(Document d) <-
 learn SentimentLabel
-  using BagOfWords, POS, Gazetteer
+  using BagOfWords, Gazetteer, NegationScore, POS
 
   with SparseNetworkLearner {
   SparseAveragedPerceptron.Parameters p = new SparseAveragedPerceptron.Parameters();
