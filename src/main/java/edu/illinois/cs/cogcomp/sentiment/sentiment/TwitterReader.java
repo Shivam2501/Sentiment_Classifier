@@ -66,7 +66,6 @@ public class TwitterReader extends LoadDictionary implements Parser {
             }
 
             Tweet entry = gson.fromJson(line,Tweet.class);
-
             //System.out.println(entry.getText());
 
             TwitterAnnotation ta = new TwitterAnnotation(entry.getText());
